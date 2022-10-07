@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Phoenix</title>
+    <link rel="stylesheet" href="/style" />
+  </head>
+  <body>
+    <div class="container flex flex-center">
+      <form class="uploadForm">
+        <div class="dropfile flex flex-center flex-col">
+          <div class="dropareaicon">
+            <i class="fas fa-file-csv"></i>
+          </div>
+          <div class="selectfile">
+            <input
+              type="file"
+              name="choosefile"
+              id="csv-up"
+              accept=".xlsx, .xls, .csv"
+              capture="environment"
+            />
+            <label class="csv-manual-box flex" for="csv-up">
+              <i class="fas fa-folder-plus"></i>
+              <p>Choose a File</p>
+            </label>
+            <p>Or, Drop File Here</p>
+          </div>
+        </div>
+        <div class="actionbtn flex flex-between-center">
+          <button class="upload-btn" type="submit">Upload</button>
+          <!-- <button class="remove-selected-btn">Remove</button> -->
+          <!-- <select name="uploadtype" id="uploadtype" required>
+                <option value="" selected disabled hidden>Select One</option>
+                <option value="certificate">Certificate</option>
+                <option value="email">Email</option>
+              </select> -->
+        </div>
+      </form>
+    </div>
+    <script src="/script"></script>
+  </body>
+</html>

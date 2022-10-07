@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+.flex {
+  display: flex;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+.flex-between-center {
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-col
+{
+    flex-direction: column;
+}
+.flex-row
+{
+    flex-direction: row;
+}
+.ico-green
+{
+    color: #1D6F42 !important;
+    opacity: .8 !important;
+}
+
+
+
+
+.actionbtn
+{
+    padding: 10px 0px;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.dropfile {
+  width: 50vw;
+  min-height: 50vh;
+  border: 4px dashed #1545B3;
+  
+}
+.dropfile.active {
+  border: 3px solid #1545B3;
+  transition: all .5s ease-in-out;
+  
+}
+.dropfile .fa-file-csv
+{
+    font-size: 4em;
+    opacity: .2;
+    color: gray;
+}
+
+input[type=file]
+{
+    display: none;
+}
+.csv-manual-box
+{
+    cursor: pointer;
+    border: 3px solid #1545B3;
+    color: #1545B3;
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 8px;
+    transition: all .5s ease-in-out;
+}
+.csv-manual-box:hover
+{
+    border: 3px solid #1545B3;
+    background-color: #1545B3;
+    color:#fff;
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 8px;
+}
+label p
+{
+    font-weight: 600;
+}
+.csv-manual-box i
+{
+    margin: 0 5px;
+}
+.dropmsg
+{
+    color: #1545B3;
+    font-size: 1.5em;
+}
+.upload-btn
+{
+    background-color: #1545B3;
+    padding: 10px;
+    outline: none;
+    border: 2px solid #1545B3;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#uploadtype
+{
+    border: 2px solid #1545B3;
+    padding: 10px;
+    outline: none;
+    border-radius: 8px;
+}
+#uploadtype option
+{
+    background-color: #1545B3;
+    padding: 10px;
+    border-radius: none;
+    color: #fff;
+   
+}
+
+@media screen and (max-width: 760px){
+    .filename
+    {
+        font-size: .8em ;
+    }
+    .dropfile {
+        width: 90vw;
+      }
+}
