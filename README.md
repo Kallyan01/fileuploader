@@ -1,6 +1,6 @@
 # FileUploader
 
-Foobar is a Python library for dealing with word pluralization.
+fileuploader is a simple file uploading system made up using node & express
 
 ## Installation
 
