@@ -9,11 +9,7 @@ Use the package manager npm to install .
 ```bash
 npm install
 ```
-
 ## Usage
-
-
-
 - start app (production mode)
 ```
 npm start
@@ -25,9 +21,6 @@ npm start
 npm run dev
 ```
 
-
-
-
 > we have decleared PORT = 3456
 - If you have any problem regarding PORT change the PORT variable on server.js
 
@@ -37,7 +30,6 @@ npm run dev
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
