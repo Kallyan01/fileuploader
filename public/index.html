@@ -23,11 +23,11 @@
           </div>
           <div class="selectfile">
             <input
-              type="file"
-              name="choosefile"
-              id="csv-up"
-              accept="*"
-              capture="environment"
+            type="file"
+            name="choosefile"
+            id="csv-up"
+            accept="*"
+            capture="environment"
             />
             <label class="csv-manual-box flex" for="csv-up">
               <i class="fas fa-folder-plus"></i>
@@ -35,6 +35,10 @@
             </label>
             <p>Or, Drop File Here</p>
           </div>
+          <!-- Information box to warn users of empty uploads -->
+            <div class="empty-upload-warning" style="z-index: 11">
+              <h3>You need to select a file before uploading!</h3>
+            </div>
         </div>
         <div class="actionbtn flex flex-between-center">
           <button class="upload-btn" type="submit">Upload</button>

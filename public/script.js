@@ -39,6 +39,15 @@ input.addEventListener("change", function () {
 });
 
 uploadForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  if (!document.getElementsByClassName("filename")[0]) {
+    // Show warning label to users
+    console.log("No files have been selected.");
+    document.getElementsByClassName('empty-upload-warning')[0].style.display = 'block';
+    return;
+  }
+  // Hide warning label
+  document.getElementsByClassName('empty-upload-warning')[0].style.display = 'none';
   console.log("HI")
   console.log(file.name)
   event.preventDefault();

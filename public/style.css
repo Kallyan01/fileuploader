@@ -129,6 +129,11 @@ label p
    
 }
 
+.empty-upload-warning {
+    display: none;
+    color: red;
+}
+
 @media screen and (max-width: 760px){
     .filename
     {
