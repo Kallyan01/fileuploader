@@ -12,13 +12,24 @@ npm install
 
 ## Usage
 
-```javascript
 
-// start app
-node server.js
 
-// we have decleared PORT = 3456
-// If you have any problem regarding PORT change the PORT variable on server.js
+- start app (production mode)
+```
+npm start
+```
+
+
+- start app (development mode)
+```
+npm run dev
+```
+
+
+
+
+> we have decleared PORT = 3456
+- If you have any problem regarding PORT change the PORT variable on server.js
 ```
 # Visit
 
