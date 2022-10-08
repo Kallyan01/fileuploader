@@ -143,3 +143,21 @@ label p
         width: 90vw;
       }
 }
+
+
+/*PROGRESS BAR*/
+
+.progressupload{
+    height: 20px;
+    margin-top: 25px;
+}
+.progress{
+    background-color: #1545B3;
+    width: 0%;
+    height: 20px;
+     
+}
+.progressBar{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
