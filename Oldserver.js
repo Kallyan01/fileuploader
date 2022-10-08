@@ -39,7 +39,7 @@ const server = http.createServer(function(req,res){
 })
 
 server.listen(PORT,(error)=>{
-    if(error) console.log('Something went wrong',error)
+    if(error) console.log('OOPS! Something went wrong',error)
     else
     console.log(`Server Running on ${PORT}`)
 })

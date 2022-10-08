@@ -12,17 +12,28 @@ npm install
 
 ## Usage
 
-```javascript
 
-// start app
-node server.js
 
-// we have decleared PORT = 3456
-// If you have any problem regarding PORT change the PORT variable on server.js
+- start app (production mode)
 ```
+npm start
+```
+
+
+- start app (development mode)
+```
+npm run dev
+```
+
+
+
+
+> we have decleared PORT = 3456
+- If you have any problem regarding PORT change the PORT variable on server.js
+
 # Visit
 
-[http://localhost:3456](http://localhost:3456)
+[http://localhost:3456](http://localhost:3456) to open the app in your local environment.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
