@@ -1,6 +1,7 @@
 const express = require('express')
 const multer = require('multer')
 const path = require("path")
+const fs = require("fs");
 const app = express()
 const PORT = 3456
 const staticPath = path.join(__dirname,"/public")
@@ -12,6 +13,9 @@ const upload = multer ({
     storage: multer.diskStorage({
         destination:function(req,file,callback)
         {
+            if (!fs.existsSync("uploads")) {
+                fs.mkdirSync("uploads", { recursive: true });
+              }
             callback(null,"uploads")
         },
         filename: function(req,file,callback)
@@ -23,7 +27,7 @@ const upload = multer ({
 
 
 app.get("/",(req,res)=>{
-    res.send("hi")
+    res.send("Welcome to the File Upload Server ❤️")
 })
 
 app.post("/upload",upload,(req,res)=>{
