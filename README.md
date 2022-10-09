@@ -1,34 +1,43 @@
 # FileUploader
 
-fileuploader is a simple file uploading system made up using node & express
+A simple file-upload application made using Node.js and Express. 
 
-## Installation
 
-Use the package manager npm to install .
+## Local Setup
+
+Install the dependencies using `npm`
 
 ```bash
 npm install
 ```
 ## Usage
-- start app (production mode)
-```
-npm start
-```
 
+### Starting the Server
 
-- start app (development mode)
+- Start the application in the *dev* environment.
 ```
 npm run dev
 ```
 
-> we have decleared PORT = 3456
-- If you have any problem regarding PORT change the PORT variable on server.js
+- Start the application in *production*.
+```
+npm start
+```
 
-# Visit
+### Configuring Ports
+The application runs on PORT `3456` by default.
 
-[http://localhost:3456](http://localhost:3456) to open the app in your local environment.
+Feel free to change this port in `server.js`
+```javascript
+//line 6
+const PORT = 3456
+```
 
-## Contributing
+## Lookup Local App
+
+Local Host URL: [http://localhost:3456](http://localhost:3456)
+
+# Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
