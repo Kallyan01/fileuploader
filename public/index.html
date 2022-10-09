@@ -19,15 +19,15 @@
       <form class="uploadForm">
         <div class="dropfile flex flex-center flex-col">
           <div class="dropareaicon">
-            <i class="fas fa-file-csv"></i>
+            <i class="fas fa-upload"></i>
           </div>
           <div class="selectfile">
             <input
-            type="file"
-            name="choosefile"
-            id="csv-up"
-            accept="*"
-            capture="environment"
+              type="file"
+              name="choosefile"
+              id="csv-up"
+              accept="*"
+              capture="environment"
             />
             <label class="csv-manual-box flex" for="csv-up">
               <i class="fas fa-folder-plus"></i>
@@ -36,19 +36,19 @@
             <p>Or, Drop Your File Here</p>
           </div>
           <!-- Information box to warn users of empty uploads -->
-            <div class="empty-upload-warning" style="z-index: 11">
-              <h3>You need to select a file before uploading!</h3>
-            </div>
+          <div class="empty-upload-warning" style="z-index: 11">
+            <h3>You need to select a file before uploading!</h3>
+          </div>
         </div>
         <div class="progressUpload"></div>
         <div class="actionbtn flex flex-between-center">
           <button class="upload-btn" type="submit">Upload</button>
           <button class="remove-selected-btn">Remove</button>
           <select name="uploadtype" id="uploadtype" required>
-                <option value="" selected disabled hidden>Select One</option>
-                <option value="certificate">Certificate</option>
-                <option value="email">Email</option>
-              </select>
+            <option value="" selected disabled hidden>Select One</option>
+            <option value="certificate">Certificate</option>
+            <option value="email">Email</option>
+          </select>
         </div>
       </form>
     </div>
