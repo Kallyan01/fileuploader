@@ -5,6 +5,10 @@ const uploadForm = document.querySelector(".uploadForm");
 const selectfileoptions = document.querySelector(".selectfile").innerHTML;
 const csvicon = document.querySelector(".fa-file-csv");
 
+var progressUpload = document.getElementsByClassName("progressUpload")[0];
+var progress;
+addProgressBar();
+
 let file;
 droparea.addEventListener("dragover", (event) => {
   event.preventDefault();
@@ -38,7 +42,7 @@ input.addEventListener("change", function () {
   csvicon.classList.add("ico-green");
 });
 
-uploadForm.addEventListener("submit", (event) => {
+uploadForm.addEventListener("submit", async (event) => {
   event.preventDefault();
   if (!document.getElementsByClassName("filename")[0]) {
     // Show warning label to users
@@ -57,23 +61,31 @@ uploadForm.addEventListener("submit", (event) => {
   const endpoint = "/upload";
   formData.append("file_data", file);
   formData.entries()
-  fetch(endpoint, {
-    method: "POST",
-    body: formData,
-  })
-    .then((response) => response.json())
-    .then((data) => {
+
+  var req = new XMLHttpRequest();  
+  req.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
       droparea.classList.remove("active");
       csvicon.classList.remove("ico-green");
       selectfile.innerHTML = selectfileoptions;
       console.log("submitted");
       formData.delete('file_data')
-      
-    })
-    .catch((err) => {
+      setTimeout(() => {
+        removeProgressBar() 
+      }, 3000);
+
+      clearTimeout()
+    }
+    if(this.onerror) {
       console.log("from Not Submitted");
       console.log(err);
-    });
+    }
+  }
+
+  req.upload.addEventListener("progress", updateProgress);
+  req.open("POST", endpoint, true);
+  req.send(formData)
+  console.log(req)
 });
 
 function formatString(fname) {
@@ -85,4 +97,30 @@ function formatString(fname) {
     );
 
   return fname;
+}
+
+function addProgressBar(){
+  var progressBar = document.createElement("div");
+  progressBar.className = "progressBar";
+  progressUpload.appendChild(progressBar);
+  var innerDIV = document.createElement("div");
+  innerDIV.className = "progress";
+  progressBar.appendChild(innerDIV);
+  progress = document.getElementsByClassName("progress")[0];
+}
+
+function removeProgressBar() {
+  while (progressUpload.hasChildNodes()) {
+    progressUpload.removeChild(progressUpload.firstChild);
+  }
+}
+
+function updateProgress(e){   
+      
+  progress.style.width = (((e.loaded/e.total)*100))+ "%";
+  progress.style.transition = "width 1s";
+
+}
+function resetProgressBar(){
+  progress.style.width = "0%";
 }
