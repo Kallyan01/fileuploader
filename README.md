@@ -25,17 +25,17 @@ npm start
 ```
 
 ### Configuring Ports
-The application runs on PORT `3456` by default.
+The application runs on PORT `3000` by default.
 
 Feel free to change this port in `server.js`
 ```javascript
 //line 6
-const PORT = 3456
+const PORT = 3000
 ```
 
 ## Lookup Local App
 
-Local Host URL: [http://localhost:3456](http://localhost:3456)
+Local Host URL: [http://localhost:3000](http://localhost:3000)
 
 # Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

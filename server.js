@@ -3,7 +3,7 @@ const multer = require('multer')
 const path = require('path')
 const fs = require('fs')
 const app = express()
-const PORT = 3456
+const PORT = 3000
 const staticPath = path.join(__dirname, '/public')
 app.use(express.static(staticPath))
 app.use('/style', express.static(path.join(staticPath, '/style.css')))
