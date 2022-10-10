@@ -126,6 +126,7 @@ label p
     color: #fff;
     border-radius: 8px;
     cursor: pointer;
+    display: none;
 }
 #uploadtype
 {
