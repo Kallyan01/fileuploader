@@ -117,6 +117,16 @@ label p
     border-radius: 8px;
     cursor: pointer;
 }
+.remove-selected-btn
+{
+    background-color: red;
+    padding: 10px;
+    outline: none;
+    border: 2px solid #1545B3;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}
 #uploadtype
 {
     border: 2px solid #1545B3;
