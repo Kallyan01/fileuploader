@@ -3,7 +3,8 @@ const selectfile = document.querySelector(".selectfile");
 const input = document.getElementById("csv-up");
 const uploadForm = document.querySelector(".uploadForm");
 const selectfileoptions = document.querySelector(".selectfile").innerHTML;
-const csvicon = document.querySelector(".fa-file-csv");
+const csvicon = document.querySelector(".fa-folder-plus");
+const resetBtn = document.querySelector('.remove-selected-btn');
 
 var progressUpload = document.getElementsByClassName("progressUpload")[0];
 var progress;
@@ -33,6 +34,7 @@ droparea.addEventListener("drop", (event) => {
 });
 input.addEventListener("change", function () {
   console.log("change")
+  resetBtn.style.display =  'block';
   file = this.files[0];
   console.log(file)
   selectfile.innerHTML = `<p class='filename'>${
@@ -123,4 +125,13 @@ function updateProgress(e){
 }
 function resetProgressBar(){
   progress.style.width = "0%";
+}
+
+function resetFile() {
+  droparea.classList.remove("active");
+  csvicon.classList.remove("ico-green");
+  selectfile.innerHTML = selectfileoptions;
+  console.log("File removed");
+  resetBtn.style.display =  'none';
+
 }
