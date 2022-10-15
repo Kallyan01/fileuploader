@@ -8,7 +8,7 @@ A simple file-upload application made using Node.js and Express.
 Install the dependencies using `npm`
 
 ```bash
-npm install
+ npm install
 ```
 ## Usage
 
@@ -16,7 +16,7 @@ npm install
 
 - Start the application in the *dev* environment.
 ```
-npm run dev
+ npm run dev
 ```
 
 - Start the application in *production*.
@@ -29,6 +29,8 @@ The application runs on PORT `3000` by default.
 
 Feel free to change this port in `server.js`
 ```javascript
+
+
 //line 6
 const PORT = 3000
 ```
