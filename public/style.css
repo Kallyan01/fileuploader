@@ -80,7 +80,7 @@ input[type=file]
     justify-content: center;
     margin: 5px;
     border-radius: 8px;
-    transition: all .5s ease-in-out;
+    transition: all .22s ease-in-out;
 }
 .csv-manual-box:hover
 {
@@ -116,6 +116,15 @@ label p
     color: #fff;
     border-radius: 8px;
     cursor: pointer;
+    transition: opacity 0.22s;
+}
+
+.upload-btn:hover{
+    opacity: 0.8;
+}
+
+.upload-btn:active{
+    background-color: #02267a;
 }
 .remove-selected-btn
 {
