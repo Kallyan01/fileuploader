@@ -27,16 +27,14 @@ droparea.addEventListener("drop", (event) => {
   droparea.classList.add("active");
   csvicon.classList.add("ico-green");
   file = event.dataTransfer.files[0];
-  console.log(file)
   selectfile.innerHTML = `<p class='filename'>${
     file.name.length < 25 ? file.name : formatString(file.name)
   }</p>`;
 });
 input.addEventListener("change", function () {
-  console.log("change")
+  
   resetBtn.style.display =  'block';
   file = this.files[0];
-  console.log(file)
   selectfile.innerHTML = `<p class='filename'>${
     file.name.length < 25 ? file.name : formatString(file.name)
   }</p>`;
