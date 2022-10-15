@@ -33,5 +33,5 @@ app.post('/upload', upload, (req, res) => {
 })
 
 app.listen(PORT, () => {
-  console.log(`Running on PORT ${PORT}`)
+  console.log(`Running on PORT http://localhost:${PORT}`)
 })
