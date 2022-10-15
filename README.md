@@ -1,11 +1,11 @@
 # FileUploader
 
-A simple file-upload application made using Node.js and Express. 
+A simple file-upload Application made using Node.js and Express. 
 
 
 ## Local Setup
 
-Install the dependencies using `npm`
+Install the Dependencies using `npm`
 
 ```bash
  npm install
@@ -30,8 +30,8 @@ The application runs on PORT `3000` by default.
 Feel free to change this port in `server.js`
 ```javascript
 
-
 //line 6
+
 const PORT = 3000
 ```
 
