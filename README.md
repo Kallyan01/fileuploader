@@ -5,7 +5,7 @@ A simple file-upload Application made using Node.js and Express.
 
 ## Local Setup
 
-Install the Dependencies using `npm`
+Install the Dependencies Using `npm`
 
 ```bash
  npm install
@@ -19,7 +19,7 @@ Install the Dependencies using `npm`
  npm run dev
 ```
 
-- Start the application in *production*.
+- Start the Application in *production*.
 ```
 npm start
 ```
