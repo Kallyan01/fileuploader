@@ -31,10 +31,6 @@ const server = http.createServer(function(req,res){
     else if(req.url==='/upload')
     {
         console.log(req.body)
-        // fs.readFile('style.css',(error,data)=>{
-        //     res.write(data)
-        //     res.end()
-        // })
     }
 })
 

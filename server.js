@@ -24,7 +24,7 @@ const upload = multer({
 }).single('file_data')
 
 app.get('/', (req, res) => {
-  res.send('Welcome to the File Upload Server ❤️')
+  res.send('Welcome to the File Upload Server ❤️ -> Go Ahead and Show Your Skills on our Codebase ')
 })
 
 app.post('/upload', upload, (req, res) => {
