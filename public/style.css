@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
 }
 .flex {
   display: flex;
@@ -147,7 +147,7 @@ label p
 #uploadtype option
 {
     background-color: #1545B3;
-    padding: 10px;
+    padding: 15px;
     border-radius: none;
     color: #fff;
    
@@ -172,11 +172,11 @@ label p
 /*PROGRESS BAR*/
 
 .progressupload{
-    height: 20px;
-    margin-top: 25px;
+    height: 15px;
+    margin-top: 30px;
 }
 .progress{
-    background-color: #1545B3;
+    background-color: #1969e2;
     width: 0%;
     height: 20px;
      
