@@ -1,6 +1,6 @@
 # FileUploader
 
-A simple file-upload Application made using Node.js and Express. 
+A simple file-upload application made using Node.js and Express. 
 
 
 ## Local Setup
@@ -27,7 +27,7 @@ npm start
 ### Configuring Ports
 The application runs on PORT `3000` by default.
 
-Feel free to change this port in `server.js`
+Feel free to change this port in `server.js`.
 ```javascript
 
 //line 6
@@ -40,7 +40,7 @@ const PORT = 3000
 Local Host URL: [http://localhost:3000](http://localhost:3000)
 
 # Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are welcomed. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
