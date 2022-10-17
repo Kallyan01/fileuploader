@@ -1,7 +1,6 @@
 # FileUploader
 
-A simple file-upload application made using Node.js and Express. 
-
+A simple file-upload Application made using Node.js and Express. 
 
 ## Local Setup
 
