@@ -40,6 +40,7 @@ input.addEventListener("change", function () {
   }</p>`;
   droparea.classList.add("active");
   csvicon.classList.add("ico-green");
+  document.getElementsByClassName('empty-upload-warning')[0].style.display = 'none';
 });
 
 uploadForm.addEventListener("submit", async (event) => {
