@@ -11,7 +11,7 @@ Install the Dependencies Using `npm`
 ```
 ## Usage
 
-### Starting the Server
+### starting the Server
 
 - Start the application in the *dev* environment.
 ```
