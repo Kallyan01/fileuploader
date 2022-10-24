@@ -41,16 +41,5 @@ Local Host URL: [http://localhost:3000](http://localhost:3000)
 # Contributing
 Pull requests are welcomed. For major changes, please open an issue first to discuss what you would like to change.
 
-# Accpected PRs :
-
-- **Different Types Of Sliders**
-- **Different UI of Sliders**
-- **Testimonials**      
-
-# PR Instructions :
-1. **Create A Separate Folder**
-2. **Add all your files**
-3. **Explain What you have done in the code** 
-
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
