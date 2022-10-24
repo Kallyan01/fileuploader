@@ -1,10 +1,10 @@
 # FileUploader
 
-A simple file-upload Application made using Node.js and Express. 
+A simple File-upload Application made using Node.js and Express. 
 
 ## Local Setup
 
-Install the Dependencies Using `npm`
+Install the dependencies Using `npm`
 
 ```bash
  npm install
