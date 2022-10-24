@@ -24,7 +24,7 @@ const upload = multer({
 }).single('file_data')
 
 app.get('/', (req, res) => {
-  res.status(200).send('Welcome to the File Upload Server ❤️ -> Go Ahead and Show Your Skills on our Codebase ')
+  res.status(200).send('Welcome to the File Uploaded Server ❤️ -> Go Ahead and Show Your Skills on our Codebase ')
 })
 app.get('/listfile', (req, res) => {
   if(fs.existsSync("./uploads"))
