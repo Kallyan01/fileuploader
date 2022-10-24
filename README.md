@@ -1,5 +1,12 @@
 ![MasterHead](https://cdni.iconscout.com/illustration/premium/thumb/upload-file-to-cloud-4487405-3722766.png)
 
+<a href="https://github.com/Kallyan01/fileuploader"><img src="https://img.shields.io/github/stars/Kallyan01/fileuploader" alt="Stars Badge"/></a>
+<a href="https://github.com/Kallyan01/fileuploader/network/members"><img src="https://img.shields.io/github/forks/Kallyan01/fileuploader" alt="Forks Badge"/></a>
+<a href="https://github.com/Kallyan01/fileuploader/pulls"><img src="https://img.shields.io/github/issues-pr/Kallyan01/fileuploader" alt="Pull Requests Badge"/></a>
+<a href="https://github.com/Kallyan01/fileuploader/issues"><img src="https://img.shields.io/github/issues/Kallyan01/fileuploader" alt="Issues Badge"/></a>
+<a href="https://github.com/Kallyan01/fileuploader/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Kallyan01/fileuploader?color=2b9348"></a>
+<a href="https://github.com/Kallyan01/fileuploader/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Kallyan01/fileuploader?color=2b9348" alt="License Badge"/></a>
+
 # FileUploader
 
 A simple File-upload Application made using Node.js and Express. 
