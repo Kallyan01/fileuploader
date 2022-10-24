@@ -11,7 +11,7 @@ Install the Dependencies Using `npm`
 ```
 ## Usage
 
-### starting the Server
+### Starting the server
 
 - Start the application in the *dev* environment.
 ```
@@ -34,7 +34,7 @@ Feel free to change this port in `server.js`.
 const PORT = 3000
 ```
 
-## Lookup Local App
+## Lookup Local app
 
 Local Host URL: [http://localhost:3000](http://localhost:3000)
 
