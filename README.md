@@ -1,3 +1,5 @@
+![MasterHead](https://cdni.iconscout.com/illustration/premium/thumb/upload-file-to-cloud-4487405-3722766.png)
+
 # FileUploader
 
 A simple File-upload Application made using Node.js and Express. 
@@ -30,7 +32,6 @@ Feel free to change this port in `server.js`.
 ```javascript
 
 //line 6
-
 const PORT = 3000
 ```
 
