@@ -26,26 +26,29 @@ const upload = multer({
 app.get('/', (req, res) => {
   res.status(200).send('Welcome to the File Uploaded Server ❤️ -> Go Ahead and Show Your Skills on our Codebase ')
 })
+
+
+const cheerio = require('cheerio');
 app.get('/listfile', (req, res) => {
-  if(fs.existsSync("./uploads"))
-  {
-    const dirpath=path.join(__dirname,"uploads");
-    fs.readdir(dirpath,(err,files)=>
-    {
-      if(files.length>0)
-      {
-        res.send(files);
+  if (fs.existsSync("./uploads")) {
+    const dirpath = path.join(__dirname, "uploads");
+    const $ = cheerio.load(fs.readFileSync(__dirname + '/public/files.html'));
+    fs.readdir(dirpath, (err, files) => {
+      if (files.length > 0) {
+        for (i in files) {
+          $('#filesList').append("<tr><td>" + files[i] + "</td></tr>")
+        }
+        // res.send(files);
+        res.send($.html())
       }
-      else
-      {
+      else {
         res.send("There are no files in the uploads folder");
       }
 
     })
-   
+
   }
-  else
-  {
+  else {
     res.send("There is no uploads folder");
   }
 })
