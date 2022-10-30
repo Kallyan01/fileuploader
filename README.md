@@ -9,7 +9,7 @@
 
 # FileUploader
 
-A simple File-upload Application made using Node.js and Express. 
+A simple File-upload Application made using Node.js and Express . 
 
 ## Local Setup
 
@@ -47,7 +47,7 @@ const PORT = 3000
 Local Host URL: [http://localhost:3000](http://localhost:3000)
 
 # Contributing
-Pull requests are welcomed.For major changes,please open an issue first to discuss what you would like to change.
+Pull requests are welcomed.For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
