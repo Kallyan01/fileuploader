@@ -13,7 +13,7 @@ A simple File-upload Application made using Node.js and Express .
 
 ## Local Setup
 
-Install the dependencies Using `npm`
+Install the Dependencies Using `npm`
 
 ```bash
  npm install
